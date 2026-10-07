@@ -1,0 +1,82 @@
+[
+  {
+    "id": "p001",
+    "nombre": "Torre de dados facetada",
+    "categoria": "Mesa de juego",
+    "precio": 249,
+    "destacado": true,
+    "descripcion": "Dados limpios, sin rebotes al escritorio. Para rol o juegos de mesa."
+  },
+  {
+    "id": "p002",
+    "nombre": "Dragón articulado",
+    "categoria": "Mesa de juego",
+    "precio": 299,
+    "destacado": true,
+    "descripcion": "Impresión sin soportes, articulaciones móviles de la cola a la cabeza."
+  },
+  {
+    "id": "p003",
+    "nombre": "Set de keycaps temática fantasía",
+    "categoria": "Geek y literario",
+    "precio": 219,
+    "destacado": true,
+    "descripcion": "4 teclas con relieve, compatibles con switches Cherry MX."
+  },
+  {
+    "id": "p004",
+    "nombre": "Sujetalibros dragón durmiente",
+    "categoria": "Geek y literario",
+    "precio": 329,
+    "destacado": false,
+    "descripcion": "Par de sujetalibros, acabado mate, base antideslizante."
+  },
+  {
+    "id": "p005",
+    "nombre": "Organizador modular de escritorio",
+    "categoria": "Útil",
+    "precio": 259,
+    "destacado": false,
+    "descripcion": "Compartimentos apilables para plumas, clips y notas."
+  },
+  {
+    "id": "p006",
+    "nombre": "Soporte para audífonos",
+    "categoria": "Útil",
+    "precio": 149,
+    "destacado": true,
+    "descripcion": "Base estable con paso de cable integrado."
+  },
+  {
+    "id": "p007",
+    "nombre": "Base para celular ajustable",
+    "categoria": "Útil",
+    "precio": 129,
+    "destacado": false,
+    "descripcion": "Ángulo ajustable, compatible con la mayoría de fundas."
+  },
+  {
+    "id": "p008",
+    "nombre": "Llavero personalizable",
+    "categoria": "Regalo",
+    "precio": 59,
+    "destacado": true,
+    "descripcion": "Nombre o iniciales a elegir, con anilla incluida."
+  },
+  {
+    "id": "p009",
+    "nombre": "Lámpara de luna con luz LED",
+    "categoria": "Regalo",
+    "precio": 349,
+    "destacado": true,
+    "descripcion": "Incluye módulo LED y base de madera."
+  },
+  {
+    "id": "p010",
+    "nombre": "Flexi animalito articulado",
+    "categoria": "Regalo",
+    "precio": 89,
+    "destacado": false,
+    "descripcion": "Se mueve solo, sin armado. El clásico que todos quieren tocar."
+  }
+]

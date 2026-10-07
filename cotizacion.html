@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Taller — Voxel Forge</title>
+<meta name="description" content="El taller de Voxel Forge: cotiza tu impresión 3D por gramos y tiempo, resuelve tus dudas en la guía rápida, o pide un presupuesto a la medida." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/logo.png" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="wordmark"><img src="img/logo.png" alt="" /> VOXEL<span>·</span>FORGE</a>
+  <nav class="site-nav">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="cotizacion.html" aria-current="page">Taller</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section style="padding-bottom: 0;">
+    <span class="section-index">Taller</span>
+    <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Tú lo imaginas, nosotros lo forjamos.</h1>
+    <p>Aquí se cotizan impresiones por archivo, pedidos personalizados y proyectos para negocio. Si es tu primera vez, la <a href="#guia-rapida" style="color: var(--accent);">guía rápida</a> resuelve las dudas más comunes antes de cotizar.</p>
+    <div class="hero-actions" style="margin-top: 1.5rem;">
+      <a href="#guia-rapida" class="btn btn-outline">Ver guía rápida</a>
+    </div>
+  </section>
+
+  <section style="padding-top: 1.75rem;" id="calculadora">
+    <span class="section-index">01 — Calculadora</span>
+    <h2>Cotiza tu impresión</h2>
+    <p>Sube tu archivo a tu rebanador de confianza, anota el peso y el tiempo estimado que te muestre, y captúralos aquí para obtener un precio.</p>
+    <div class="quote-panel reg-mark">
+      <div class="quote-inputs">
+        <div class="field">
+          <label for="input-gramos">Peso de la pieza <span class="unit">gramos</span></label>
+          <input type="number" id="input-gramos" min="0" step="1" value="45" />
+        </div>
+        <div class="field">
+          <label for="input-tiempo">Tiempo de impresión <span class="unit">horas</span></label>
+          <input type="number" id="input-tiempo" min="0" step="0.1" value="2.5" />
+        </div>
+        <div class="field">
+          <label style="margin-bottom: 0.75rem;">Aditamentos</label>
+          <div class="addon-list">
+            <label>
+              <span>Anilla para llavero</span>
+              <span class="addon-price"></span>
+              <input type="checkbox" data-aditamento="anilla" />
+            </label>
+            <label>
+              <span>Imán</span>
+              <span class="addon-price"></span>
+              <input type="checkbox" data-aditamento="iman" />
+            </label>
+            <label>
+              <span>Módulo de luz LED</span>
+              <span class="addon-price"></span>
+              <input type="checkbox" data-aditamento="led" />
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-output quote-output-simple">
+        <h3>Tu presupuesto</h3>
+        <div class="quote-total quote-total-solo">
+          <span class="label">Precio estimado</span>
+          <span class="value" id="salida-total">$0.00</span>
+        </div>
+        <p class="quote-note">Cotización orientativa. El precio final puede variar según acabado, soportes y validación del archivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="guia-rapida">
+    <span class="section-index">02 — Guía rápida</span>
+    <h2>Antes de cotizar</h2>
+    <p>Respuestas directas a lo que más nos preguntan. Si no encuentras la tuya, pide asesoría y te orientamos sin costo.</p>
+
+    <div class="faq-list">
+      <details>
+        <summary>¿Qué archivo necesito para cotizar?</summary>
+        <p>Un STL, OBJ o 3MF ya laminado en tu rebanador (Cura, PrusaSlicer, Bambu Studio…). El laminador te muestra el peso en gramos y el tiempo estimado de impresión — esos dos números son los que pide la calculadora.</p>
+      </details>
+      <details>
+        <summary>No tengo un rebanador instalado, ¿qué hago?</summary>
+        <p>Mándanos el archivo por correo y te devolvemos el peso, el tiempo y la cotización ya calculados. Así de simple.</p>
+      </details>
+      <details>
+        <summary>¿Qué material me conviene, PLA o PETG?</summary>
+        <p>PLA es el más usado: buen acabado, económico, ideal para piezas decorativas o de exhibición. PETG resiste mejor el calor y los golpes — mejor opción si la pieza se va a usar a la intemperie o a diario. Si no estás seguro, dinos para qué es la pieza y te recomendamos.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto tarda mi pedido en estar listo?</summary>
+        <p>Depende de la fila de impresión y el tamaño de la pieza. Piezas pequeñas suelen salir en un par de días; pedidos grandes o personalizados los acordamos contigo al cotizar.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir varias piezas iguales o un lote para mi negocio?</summary>
+        <p>Sí. Para volumen, escríbenos directamente — el precio por pieza normalmente baja y acordamos tiempos de entrega fijos.</p>
+      </details>
+    </div>
+
+    <div class="hero-actions" style="margin-top: 2rem;">
+      <a href="#calculadora" class="btn btn-primary">Cotizar mi impresión</a>
+      <a href="mailto:hola@voxelforge.mx?subject=Asesor%C3%ADa%20de%20materiales" class="btn btn-outline">Solicitar asesoría</a>
+    </div>
+  </section>
+
+  <section id="cotizaciones-especiales">
+    <span class="section-index">03 — A la medida</span>
+    <h2>¿Tu pedido no cabe en la calculadora?</h2>
+    <p>Para proyectos personalizados, pedidos grandes o si no sabes qué filamento conviene, escríbenos directamente y evaluamos el proyecto contigo antes de cotizar.</p>
+
+    <div class="special-grid" style="margin-top: 2rem;">
+      <div class="special-card reg-mark">
+        <h3>Pedidos personalizados</h3>
+        <p>Llaveros para fiestas, piezas con diseño propio o pequeñas series. Cuéntanos cantidad, fecha de entrega y referencia.</p>
+        <a class="btn btn-outline" href="mailto:pedidos@voxelforge.mx?subject=Pedido%20personalizado">Escribir por correo</a>
+      </div>
+      <div class="special-card reg-mark">
+        <h3>Pedidos para negocios</h3>
+        <p>Volumen mayor, entregas recurrentes o piezas para tu propia marca. Trabajamos cotización y tiempos de entrega a la medida.</p>
+        <a class="btn btn-outline" href="mailto:negocios@voxelforge.mx?subject=Cotizaci%C3%B3n%20B2B">Escribir por correo</a>
+      </div>
+      <div class="special-card reg-mark">
+        <h3>Asesoría de materiales</h3>
+        <p>¿No sabes si tu pieza necesita PLA, PETG o algo más resistente? Pídenos orientación antes de mandar a imprimir.</p>
+        <a class="btn btn-outline" href="mailto:hola@voxelforge.mx?subject=Asesor%C3%ADa%20de%20materiales">Pedir asesoría</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>Voxel Forge — impresión 3D</span>
+  <span>hola@voxelforge.mx</span>
+</footer>
+
+<script src="js/calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Voxel Forge — Cosas geniales, forjadas capa por capa</title>
+<meta name="description" content="Miniaturas, keycaps y más para tu mesa, tu librero y tu escritorio. Impresión 3D lista para comprar o a tu medida." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/logo.png" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="wordmark"><img src="img/logo.png" alt="" /> VOXEL<span>·</span>FORGE</a>
+  <nav class="site-nav">
+    <a href="index.html" aria-current="page">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="cotizacion.html">Taller</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>Cosas geniales,<br>forjadas capa por capa.</h1>
+        <p>Llegas, eliges algo que te late, y te llega listo para usarse, exhibirse o regalarse.</p>
+        <div class="hero-actions">
+          <a href="#mas-vendidos" class="btn btn-primary">Ver más vendidos</a>
+          <a href="catalogo.html" class="btn btn-outline">Catálogo completo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="mas-vendidos">
+    <div class="section-head">
+      <div>
+        <span class="section-index">Catálogo</span>
+        <h2>Los más vendidos</h2>
+      </div>
+      <a href="catalogo.html" class="btn btn-outline">Ver todo el catálogo</a>
+    </div>
+    <div class="rail" id="rail-destacados">
+      <p>Cargando artículos…</p>
+    </div>
+  </section>
+
+  <section class="wrap" id="que-hacemos">
+    <div class="section-head">
+      <div>
+        <span class="section-index">Qué hacemos</span>
+        <h2>Mira esto</h2>
+      </div>
+    </div>
+    <p>Miniaturas, keycaps y más para tu mesa, tu librero y tu escritorio. Así dividimos el catálogo — entra directo al que te late.</p>
+    <div class="pillar-grid">
+      <a class="pillar-card" href="catalogo.html?pilar=Mesa%20de%20juego">
+        <h3>Mesa de juego</h3>
+        <p>Miniaturas, torre de dados, accesorios de rol, ajedrez.</p>
+      </a>
+      <a class="pillar-card" href="catalogo.html?pilar=Geek%20y%20literario">
+        <h3>Geek y literario</h3>
+        <p>Keycaps, piezas de fantasía y decoración de librero.</p>
+      </a>
+      <a class="pillar-card" href="catalogo.html?pilar=%C3%9Atil">
+        <h3>Útil</h3>
+        <p>Organizadores, soportes y cosas de escritorio con onda.</p>
+      </a>
+      <a class="pillar-card" href="catalogo.html?pilar=Regalo">
+        <h3>Regalo fácil</h3>
+        <p>Piezas pequeñas y personalizables, pensadas para dar.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<div class="cta-band">
+  <div class="wrap">
+    <h2>Tú lo imaginas, nosotros lo forjamos.</h2>
+    <a href="cotizacion.html" class="btn btn-primary">Ir al taller</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <span>Voxel Forge — impresión 3D</span>
+  <span>hola@voxelforge.mx</span>
+</footer>
+
+<script src="js/productos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const rail = document.getElementById("rail-destacados");
+    try {
+      const productos = await cargarProductos();
+      const destacados = productos.filter((p) => p.destacado);
+      renderTarjetas(rail, destacados);
+    } catch (err) {
+      rail.innerHTML = "<p>No se pudieron cargar los artículos destacados.</p>";
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Catálogo — Voxel Forge</title>
+<meta name="description" content="Explora el catálogo de Voxel Forge por nicho (mesa de juego, geek y literario, útil, regalo) o búscalo todo en una sola vista." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/logo.png" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="wordmark"><img src="img/logo.png" alt="" /> VOXEL<span>·</span>FORGE</a>
+  <nav class="site-nav">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html" aria-current="page">Catálogo</a>
+    <a href="cotizacion.html">Taller</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section style="padding-bottom: 0;">
+    <span class="section-index">Catálogo</span>
+    <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Piezas listas para llevar</h1>
+    <p>Compra directa aquí o a través de nuestras tiendas en TikTok Shop y Mercado Libre. ¿Buscas algo distinto? <a href="cotizacion.html" style="color: var(--accent);">Cotiza tu propio archivo.</a></p>
+  </section>
+
+  <section style="padding-top: 1.5rem;">
+    <div class="chips" id="chips-pilares" role="tablist" aria-label="Filtrar por nicho"></div>
+    <div class="filters">
+      <h2 id="titulo-vista" style="margin: 0; font-size: 1.1rem;">Todo el catálogo</h2>
+      <input type="search" id="buscador" placeholder="Buscar por nombre…" aria-label="Buscar por nombre" />
+      <span class="result-count" id="contador-resultados"></span>
+    </div>
+    <div class="grid-products" id="grid-catalogo">
+      <p>Cargando catálogo…</p>
+    </div>
+  </section>
+</main>
+
+<div class="cta-band">
+  <div class="wrap">
+    <h2>¿No encuentras lo que buscas?</h2>
+    <a href="cotizacion.html" class="btn btn-primary">Cotizar una pieza personalizada</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <span>Voxel Forge — impresión 3D</span>
+  <span>hola@voxelforge.mx</span>
+</footer>
+
+<script src="js/productos.js"></script>
+<script src="js/catalogo.js"></script>
+</body>
+</html>
