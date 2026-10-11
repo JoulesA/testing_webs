@@ -36,20 +36,22 @@
     </div>
   </section>
 
-  <section class="wrap" id="mas-vendidos">
-    <div class="section-head">
-      <div>
-        <span class="section-index">Catálogo</span>
-        <h2>Los más vendidos</h2>
+  <section class="band band-ember" id="mas-vendidos">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-index">Catálogo</span>
+          <h2>Los más vendidos</h2>
+        </div>
+        <a href="catalogo.html?vendidos=1" class="btn btn-outline">Ver todos los más vendidos</a>
       </div>
-      <a href="catalogo.html" class="btn btn-outline">Ver todo el catálogo</a>
     </div>
-    <div class="rail" id="rail-destacados">
-      <p>Cargando artículos…</p>
+    <div class="marquee" id="rail-destacados" aria-label="Los más vendidos">
+      <p class="wrap">Cargando artículos…</p>
     </div>
   </section>
 
-  <section class="wrap" id="que-hacemos">
+  <section class="band band-panel" id="que-hacemos"><div class="wrap">
     <div class="section-head">
       <div>
         <span class="section-index">Qué hacemos</span>
@@ -75,7 +77,7 @@
         <p>Piezas pequeñas y personalizables, pensadas para dar.</p>
       </a>
     </div>
-  </section>
+  </div></section>
 </main>
 
 <div class="cta-band">
@@ -91,13 +93,14 @@
 </footer>
 
 <script src="js/productos.js"></script>
+<script src="js/carrusel.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", async () => {
     const rail = document.getElementById("rail-destacados");
     try {
       const productos = await cargarProductos();
       const destacados = productos.filter((p) => p.destacado);
-      renderTarjetas(rail, destacados);
+      crearCarruselInfinito(rail, destacados);
     } catch (err) {
       rail.innerHTML = "<p>No se pudieron cargar los artículos destacados.</p>";
     }

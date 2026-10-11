@@ -2,81 +2,144 @@
   {
     "id": "p001",
     "nombre": "Torre de dados facetada",
-    "categoria": "Mesa de juego",
-    "precio": 249,
+    "descripcion": "Dados limpios, sin rebotes al escritorio. Para rol o juegos de mesa.",
+    "categorias": ["Mesa de juego", "Geek y literario"],
     "destacado": true,
-    "descripcion": "Dados limpios, sin rebotes al escritorio. Para rol o juegos de mesa."
+    "personalizable": false,
+    "precio": 249,
+    "tamanos": [
+      { "etiqueta": "Chica", "precio": 249 },
+      { "etiqueta": "Grande", "precio": 329 }
+    ],
+    "colores": [
+      { "nombre": "Negro", "hex": "#1b1b1f", "imagen": "img/productos/p001-negro.svg" },
+      { "nombre": "Naranja brasa", "hex": "#f0690f", "imagen": "img/productos/p001-naranja.svg" },
+      { "nombre": "Piedra", "hex": "#8a8a92", "imagen": "img/productos/p001-piedra.svg" }
+    ]
   },
   {
     "id": "p002",
     "nombre": "Dragón articulado",
-    "categoria": "Mesa de juego",
-    "precio": 299,
+    "descripcion": "Impresión sin soportes, articulaciones móviles de la cola a la cabeza.",
+    "categorias": ["Mesa de juego", "Regalo"],
     "destacado": true,
-    "descripcion": "Impresión sin soportes, articulaciones móviles de la cola a la cabeza."
+    "personalizable": false,
+    "precio": 299,
+    "colores": [
+      { "nombre": "Verde bosque", "hex": "#2f6b4f", "imagen": "img/productos/p002-verde.svg" },
+      { "nombre": "Rojo", "hex": "#b3261e", "imagen": "img/productos/p002-rojo.svg" }
+    ]
   },
   {
     "id": "p003",
     "nombre": "Set de keycaps temática fantasía",
-    "categoria": "Geek y literario",
-    "precio": 219,
+    "descripcion": "4 teclas con relieve, compatibles con switches Cherry MX.",
+    "categorias": ["Geek y literario"],
     "destacado": true,
-    "descripcion": "4 teclas con relieve, compatibles con switches Cherry MX."
+    "personalizable": true,
+    "precio": 219,
+    "colores": [
+      { "nombre": "Hueso", "hex": "#f4efe6", "imagen": "img/productos/p003-hueso.svg" },
+      { "nombre": "Vino", "hex": "#6e1f2e", "imagen": "img/productos/p003-vino.svg" },
+      { "nombre": "Azul acero", "hex": "#3d5a80", "imagen": "img/productos/p003-azul.svg" }
+    ]
   },
   {
     "id": "p004",
     "nombre": "Sujetalibros dragón durmiente",
-    "categoria": "Geek y literario",
-    "precio": 329,
+    "descripcion": "Par de sujetalibros, acabado mate, base antideslizante.",
+    "categorias": ["Geek y literario", "Útil"],
     "destacado": false,
-    "descripcion": "Par de sujetalibros, acabado mate, base antideslizante."
+    "personalizable": false,
+    "precio": 329,
+    "colores": [
+      { "nombre": "Negro", "hex": "#1b1b1f", "imagen": "img/productos/p004-negro.svg" },
+      { "nombre": "Piedra", "hex": "#8a8a92", "imagen": "img/productos/p004-piedra.svg" }
+    ]
   },
   {
     "id": "p005",
     "nombre": "Organizador modular de escritorio",
-    "categoria": "Útil",
-    "precio": 259,
+    "descripcion": "Compartimentos apilables para plumas, clips y notas.",
+    "categorias": ["Útil"],
     "destacado": false,
-    "descripcion": "Compartimentos apilables para plumas, clips y notas."
+    "personalizable": true,
+    "precio": 199,
+    "tamanos": [
+      { "etiqueta": "Chico", "precio": 199 },
+      { "etiqueta": "Mediano", "precio": 259 },
+      { "etiqueta": "Grande", "precio": 329 }
+    ],
+    "colores": [
+      { "nombre": "Negro", "hex": "#1b1b1f", "imagen": "img/productos/p005-negro.svg" },
+      { "nombre": "Hueso", "hex": "#f4efe6", "imagen": "img/productos/p005-hueso.svg" }
+    ]
   },
   {
     "id": "p006",
     "nombre": "Soporte para audífonos",
-    "categoria": "Útil",
-    "precio": 149,
+    "descripcion": "Base estable con paso de cable integrado.",
+    "categorias": ["Útil"],
     "destacado": true,
-    "descripcion": "Base estable con paso de cable integrado."
+    "personalizable": false,
+    "precio": 149,
+    "colores": [
+      { "nombre": "Negro", "hex": "#1b1b1f", "imagen": "img/productos/p006-negro.svg" },
+      { "nombre": "Naranja brasa", "hex": "#f0690f", "imagen": "img/productos/p006-naranja.svg" }
+    ]
   },
   {
     "id": "p007",
     "nombre": "Base para celular ajustable",
-    "categoria": "Útil",
-    "precio": 129,
+    "descripcion": "Ángulo ajustable, compatible con la mayoría de fundas.",
+    "categorias": ["Útil"],
     "destacado": false,
-    "descripcion": "Ángulo ajustable, compatible con la mayoría de fundas."
+    "personalizable": false,
+    "precio": 129
   },
   {
     "id": "p008",
     "nombre": "Llavero personalizable",
-    "categoria": "Regalo",
-    "precio": 59,
+    "descripcion": "Nombre o iniciales a elegir, con anilla incluida.",
+    "categorias": ["Regalo"],
     "destacado": true,
-    "descripcion": "Nombre o iniciales a elegir, con anilla incluida."
+    "personalizable": true,
+    "precio": 59,
+    "colores": [
+      { "nombre": "Naranja brasa", "hex": "#f0690f", "imagen": "img/productos/p008-naranja.svg" },
+      { "nombre": "Hueso", "hex": "#f4efe6", "imagen": "img/productos/p008-hueso.svg" },
+      { "nombre": "Azul acero", "hex": "#3d5a80", "imagen": "img/productos/p008-azul.svg" }
+    ]
   },
   {
     "id": "p009",
     "nombre": "Lámpara de luna con luz LED",
-    "categoria": "Regalo",
-    "precio": 349,
+    "descripcion": "Incluye módulo LED y base de madera.",
+    "categorias": ["Regalo", "Útil"],
     "destacado": true,
-    "descripcion": "Incluye módulo LED y base de madera."
+    "personalizable": false,
+    "precio": 349,
+    "tamanos": [
+      { "etiqueta": "10 cm", "precio": 349 },
+      { "etiqueta": "15 cm", "precio": 449 }
+    ]
   },
   {
     "id": "p010",
     "nombre": "Flexi animalito articulado",
-    "categoria": "Regalo",
-    "precio": 89,
+    "descripcion": "Se mueve solo, sin armado. El clásico que todos quieren tocar.",
+    "categorias": ["Regalo"],
     "destacado": false,
-    "descripcion": "Se mueve solo, sin armado. El clásico que todos quieren tocar."
+    "personalizable": false,
+    "precio": 69,
+    "tamanos": [
+      { "etiqueta": "Mini", "precio": 69 },
+      { "etiqueta": "Estándar", "precio": 89 }
+    ],
+    "colores": [
+      { "nombre": "Verde bosque", "hex": "#2f6b4f", "imagen": "img/productos/p010-verde.svg" },
+      { "nombre": "Naranja brasa", "hex": "#f0690f", "imagen": "img/productos/p010-naranja.svg" },
+      { "nombre": "Azul acero", "hex": "#3d5a80", "imagen": "img/productos/p010-azul.svg" }
+    ]
   }
 ]

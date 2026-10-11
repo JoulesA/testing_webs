@@ -22,17 +22,17 @@
   </nav>
 </header>
 
-<main class="wrap">
-  <section style="padding-bottom: 0;">
+<main>
+  <section class="band band-ember band-head"><div class="wrap">
     <span class="section-index">Taller</span>
-    <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Tú lo imaginas, nosotros lo forjamos.</h1>
+    <h1 class="page-title">Tú lo imaginas, nosotros lo forjamos.</h1>
     <p>Aquí se cotizan impresiones por archivo, pedidos personalizados y proyectos para negocio. Si es tu primera vez, la <a href="#guia-rapida" style="color: var(--accent);">guía rápida</a> resuelve las dudas más comunes antes de cotizar.</p>
     <div class="hero-actions" style="margin-top: 1.5rem;">
       <a href="#guia-rapida" class="btn btn-outline">Ver guía rápida</a>
     </div>
-  </section>
+  </div></section>
 
-  <section style="padding-top: 1.75rem;" id="calculadora">
+  <section class="band band-lines band-tight" id="calculadora"><div class="wrap">
     <span class="section-index">01 — Calculadora</span>
     <h2>Cotiza tu impresión</h2>
     <p>Sube tu archivo a tu rebanador de confianza, anota el peso y el tiempo estimado que te muestre, y captúralos aquí para obtener un precio.</p>
@@ -77,10 +77,36 @@
         <p class="quote-note">Cotización orientativa. El precio final puede variar según acabado, soportes y validación del archivo.</p>
       </div>
     </div>
-  </section>
+  </div></section>
 
-  <section id="guia-rapida">
-    <span class="section-index">02 — Guía rápida</span>
+  <section class="band band-forge" id="personalizacion"><div class="wrap">
+    <span class="section-index">02 — Personalización</span>
+    <h2>Personaliza una pieza</h2>
+    <p>Las piezas del catálogo con la etiqueta <em>Personalizable</em> te traen aquí con la pieza, el tamaño y el color ya elegidos. Cuéntanos qué quieres cambiar y el mensaje sale listo por WhatsApp o correo.</p>
+    <div class="custom-panel reg-mark">
+      <div class="custom-grid">
+        <div class="field">
+          <label for="pers-pieza">Pieza</label>
+          <input type="text" id="pers-pieza" placeholder="Ej. Llavero personalizable" />
+        </div>
+        <div class="field">
+          <label for="pers-cantidad">Cantidad</label>
+          <input type="number" id="pers-cantidad" min="1" step="1" value="1" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="pers-detalle">¿Qué quieres personalizar?</label>
+        <textarea id="pers-detalle" rows="4" placeholder="Nombre o texto, colores, tamaño, fecha en que lo necesitas…"></textarea>
+      </div>
+      <div class="hero-actions" style="margin-top: 0.5rem;">
+        <a id="pers-whatsapp" class="btn btn-primary" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        <a id="pers-correo" class="btn btn-outline" href="#">Enviar por correo</a>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="band band-panel" id="guia-rapida"><div class="wrap">
+    <span class="section-index">03 — Guía rápida</span>
     <h2>Antes de cotizar</h2>
     <p>Respuestas directas a lo que más nos preguntan. Si no encuentras la tuya, pide asesoría y te orientamos sin costo.</p>
 
@@ -111,10 +137,10 @@
       <a href="#calculadora" class="btn btn-primary">Cotizar mi impresión</a>
       <a href="mailto:hola@voxelforge.mx?subject=Asesor%C3%ADa%20de%20materiales" class="btn btn-outline">Solicitar asesoría</a>
     </div>
-  </section>
+  </div></section>
 
-  <section id="cotizaciones-especiales">
-    <span class="section-index">03 — A la medida</span>
+  <section class="band band-ember" id="cotizaciones-especiales"><div class="wrap">
+    <span class="section-index">04 — A la medida</span>
     <h2>¿Tu pedido no cabe en la calculadora?</h2>
     <p>Para proyectos personalizados, pedidos grandes o si no sabes qué filamento conviene, escríbenos directamente y evaluamos el proyecto contigo antes de cotizar.</p>
 
@@ -135,7 +161,7 @@
         <a class="btn btn-outline" href="mailto:hola@voxelforge.mx?subject=Asesor%C3%ADa%20de%20materiales">Pedir asesoría</a>
       </div>
     </div>
-  </section>
+  </div></section>
 </main>
 
 <footer class="site-footer">
@@ -144,5 +170,6 @@
 </footer>
 
 <script src="js/calculadora.js"></script>
+<script src="js/personalizacion.js"></script>
 </body>
 </html>
