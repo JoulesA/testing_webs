@@ -47,22 +47,35 @@
           <input type="number" id="input-tiempo" min="0" step="0.1" value="2.5" />
         </div>
         <div class="field">
+          <label for="select-material">Material</label>
+          <select id="select-material"></select>
+        </div>
+        <div class="field">
           <label style="margin-bottom: 0.75rem;">Aditamentos</label>
           <div class="addon-list">
             <label>
               <span>Anilla para llavero</span>
-              <span class="addon-price"></span>
               <input type="checkbox" data-aditamento="anilla" />
             </label>
             <label>
               <span>Imán</span>
-              <span class="addon-price"></span>
               <input type="checkbox" data-aditamento="iman" />
             </label>
+            
+            <!--
             <label>
               <span>Módulo de luz LED</span>
-              <span class="addon-price"></span>
               <input type="checkbox" data-aditamento="led" />
+            </label> 
+            -->
+            
+            <label>
+              <span>Mecanismo de clicker</span>
+              <input type="checkbox" data-aditamento="clicker" />
+            </label>
+            <label>
+              <span>Vela led</span>
+              <input type="checkbox" data-aditamento="tealight" />
             </label>
           </div>
         </div>
@@ -75,6 +88,11 @@
           <span class="value" id="salida-total">$0.00</span>
         </div>
         <p class="quote-note">Cotización orientativa. El precio final puede variar según acabado, soportes y validación del archivo.</p>
+        <div class="bulk-note">
+          <h3>Cotiza por mayoreo a partir de <span data-mayoreo-minimo>30</span> piezas</h3>
+          <p>¿Necesitas un lote? Mándanos tu archivo y las cantidades, y lo cotizamos aparte.</p>
+          <a id="mayoreo-enlace" class="btn btn-outline" href="mailto:cjimenezm1298@gmail.com?subject=Cotizaci%C3%B3n%20por%20mayoreo">Pedir cotización por mayoreo</a>
+        </div>
       </div>
     </div>
   </div></section>
@@ -113,19 +131,24 @@
     <div class="faq-list">
       <details>
         <summary>¿Qué archivo necesito para cotizar?</summary>
-        <p>Un STL, OBJ o 3MF ya laminado en tu rebanador (Cura, PrusaSlicer, Bambu Studio…). El laminador te muestra el peso en gramos y el tiempo estimado de impresión — esos dos números son los que pide la calculadora.</p>
+        <p>Un STL, OBJ o 3MF listo para imprimir en tu laminador (Cura, PrusaSlicer, Bambu Studio…). El laminador te muestra el peso en gramos y el tiempo estimado de impresión — esos dos números son los que pide la calculadora.</p>
       </details>
       <details>
         <summary>No tengo un rebanador instalado, ¿qué hago?</summary>
-        <p>Mándanos el archivo por correo y te devolvemos el peso, el tiempo y la cotización ya calculados. Así de simple.</p>
+        <p>Mándanos el archivo por correo y te devolvemos el peso, el tiempo y la cotización ya calculados. 
+          Así de simple.</p>
       </details>
       <details>
-        <summary>¿Qué material me conviene, PLA o PETG?</summary>
-        <p>PLA es el más usado: buen acabado, económico, ideal para piezas decorativas o de exhibición. PETG resiste mejor el calor y los golpes — mejor opción si la pieza se va a usar a la intemperie o a diario. Si no estás seguro, dinos para qué es la pieza y te recomendamos.</p>
+        <summary>¿Qué material me conviene, PLA, PETG, Resina?</summary>
+        <p>PLA es el más usado: buen acabado, económico, ideal para piezas decorativas simples o de exhibición. 
+          PETG resiste mejor el calor y los golpes — mejor opción si la pieza se va a usar a la intemperie o a diario. 
+          Resina ofrece detalles finos y acabados profesionales, ideal para minituras, dioramas y teclas. 
+          Si no estás seguro puedes pedirnos consejo, dinos para qué es la pieza y te recomendamos.</p>
       </details>
       <details>
         <summary>¿Cuánto tarda mi pedido en estar listo?</summary>
-        <p>Depende de la fila de impresión y el tamaño de la pieza. Piezas pequeñas suelen salir en un par de días; pedidos grandes o personalizados los acordamos contigo al cotizar.</p>
+        <p>Depende de la fila de impresión y el tamaño de la pieza. Piezas pequeñas suelen salir en un par de días; 
+          pedidos grandes o personalizados los acordamos contigo al cotizar. Si tienes prisa, puedes elegir la opción de <strong>entrega prioritaria</strong>, pregunta por ella al cotizar.</p>
       </details>
       <details>
         <summary>¿Puedo pedir varias piezas iguales o un lote para mi negocio?</summary>
@@ -135,7 +158,7 @@
 
     <div class="hero-actions" style="margin-top: 2rem;">
       <a href="#calculadora" class="btn btn-primary">Cotizar mi impresión</a>
-      <a href="mailto:hola@voxelforge.mx?subject=Asesor%C3%ADa%20de%20materiales" class="btn btn-outline">Solicitar asesoría</a>
+      <a href="mailto:cjimenezm1298@gmail.com?subject=Asesor%C3%ADa%20de%20materiales" class="btn btn-outline">Solicitar asesoría</a>
     </div>
   </div></section>
 
@@ -148,17 +171,17 @@
       <div class="special-card reg-mark">
         <h3>Pedidos personalizados</h3>
         <p>Llaveros para fiestas, piezas con diseño propio o pequeñas series. Cuéntanos cantidad, fecha de entrega y referencia.</p>
-        <a class="btn btn-outline" href="mailto:pedidos@voxelforge.mx?subject=Pedido%20personalizado">Escribir por correo</a>
+        <a class="btn btn-outline" href="mailto:cjimenezm1298@gmail.com?subject=Pedido%20personalizado">Escribir por correo</a>
       </div>
       <div class="special-card reg-mark">
         <h3>Pedidos para negocios</h3>
         <p>Volumen mayor, entregas recurrentes o piezas para tu propia marca. Trabajamos cotización y tiempos de entrega a la medida.</p>
-        <a class="btn btn-outline" href="mailto:negocios@voxelforge.mx?subject=Cotizaci%C3%B3n%20B2B">Escribir por correo</a>
+        <a class="btn btn-outline" href="mailto:cjimenezm1298@gmail.com?subject=Cotizaci%C3%B3n%20B2B">Escribir por correo</a>
       </div>
       <div class="special-card reg-mark">
         <h3>Asesoría de materiales</h3>
         <p>¿No sabes si tu pieza necesita PLA, PETG o algo más resistente? Pídenos orientación antes de mandar a imprimir.</p>
-        <a class="btn btn-outline" href="mailto:hola@voxelforge.mx?subject=Asesor%C3%ADa%20de%20materiales">Pedir asesoría</a>
+        <a class="btn btn-outline" href="mailto:cjimenezm1298@gmail.com?subject=Asesor%C3%ADa%20de%20materiales">Pedir asesoría</a>
       </div>
     </div>
   </div></section>
@@ -166,7 +189,7 @@
 
 <footer class="site-footer">
   <span>Voxel Forge — impresión 3D</span>
-  <span>hola@voxelforge.mx</span>
+  <span>cjimenezm1298@gmail.com</span>
 </footer>
 
 <script src="js/calculadora.js"></script>
