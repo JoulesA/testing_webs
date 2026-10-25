@@ -442,6 +442,20 @@ section { padding: clamp(3rem, 8vw, 6rem) 0; }
   border-radius: var(--radius);
 }
 .field textarea { resize: vertical; }
+.field select {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23f0690f' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 0.9rem center / 12px;
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+  padding: 0.7rem 2.4rem 0.7rem 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.field select option { background: var(--bg-panel); color: var(--text); }
 .field input[type="range"] { width: 100%; accent-color: var(--accent); }
 
 .addon-list { display: flex; flex-direction: column; gap: 0.6rem; }
@@ -457,7 +471,6 @@ section { padding: clamp(3rem, 8vw, 6rem) 0; }
   cursor: pointer;
 }
 .addon-list label:hover { border-color: var(--line-strong); }
-.addon-list .addon-price { font-family: var(--font-mono); color: var(--text-dim); font-size: 0.85rem; }
 .addon-list input { accent-color: var(--accent); }
 
 .quote-output { padding: clamp(1.5rem, 3vw, 2.5rem); display: flex; flex-direction: column; }
@@ -481,6 +494,15 @@ section { padding: clamp(3rem, 8vw, 6rem) 0; }
 }
 .quote-total-solo .value { font-size: clamp(2.6rem, 6vw, 3.6rem); }
 .quote-note { font-size: 0.8rem; margin-top: 1rem; }
+.bulk-note {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+.bulk-note h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+.bulk-note p { font-size: 0.85rem; margin: 0 auto 0.9rem; }
 
 /* Personalización (Taller) ------------------------------------------------------ */
 .custom-panel {

@@ -3,8 +3,8 @@
    del catálogo), prellena la pieza y arma los enlaces de correo y WhatsApp. */
 
 const CONTACTO_PERSONALIZACION = {
-  whatsapp: "520000000000",        // número con lada de país, sin + ni espacios (placeholder: cámbialo)
-  correo: "pedidos@voxelforge.mx"
+  whatsapp: "527223743742",        // número con lada de país, sin + ni espacios (placeholder: cámbialo)
+  correo: "cjimenezm1298@gmail.com"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
